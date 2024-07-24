@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ventastienda.css">
+</head>
+<body>
+    <button type="button" id="iralstock" onclick="iralstock()">Ir al stock</button>
+    <button type="button" id="cerrarsesion" onclick="cerrarsesion()">Cerrar sesión</button> 
+    <br><br>
+    <center>
+    <form id="formulario">
+        <br>
+        <h1>Ventas realizadas</h1>
+        <br><br>
+        <label for="id">ID</label>
+        <input type="text" id="id" required style="text-transform: uppercase;">
+        <br><br><br>
+        <label for="prenda">Prenda</label>
+        <input type="text" id="prenda" required style="text-transform: uppercase;">
+        <br><br><br>
+        <label for="talle">Talle</label>
+        <input type="text" id="talle" required style="text-transform: uppercase;">
+        <br><br><br>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" required>
+        <br><br><br>
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" required style="text-transform: uppercase;">
+        <br><br><br>
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" required>
+        <br><br><br>
+        <button type="button" onclick="guardarVenta()" id="btnGuardar">Cargar venta</button>
+        <br>
+        <button type="button" id="btnActualizar">Actualizar</button>
+        <br><br><br><br>
+    </form>
+    </center>
+    <center>
+        <br><br><br>
+        <table id="tablaVentas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Prenda</th>
+                    <th>Talle</th>
+                    <th>Cantidad</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="button" id="finalizarcompra" onclick="finalizarcompra()">Finalizar compra</button>
+    </center>  
+    <script src="ventastienda.js"></script> 
+</body>
+</html>
